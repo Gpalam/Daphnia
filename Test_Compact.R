@@ -20,7 +20,7 @@ N_CHAINS     <- 5
 THIN         <- 500
 THIN_PLOT    <- 1
 
-### plotting 
+### plotting MACROS
 PLOT_IN_TERMINAL <- F
 PLOT_POSTERIOR   <- T
 STATE_RESOLUTION_PLOT <- F
@@ -41,8 +41,8 @@ load.module("dic")
 if ( ! require(IDPmisc) )   { install.packages("IDPmisc");   library(IDPmisc) }
 
 ## example for local test
-TREAT_TEST     <- "dz"
-CLONE_TEST     <- "D2"
+TREAT_TEST     <- "dz" ## select clone
+CLONE_TEST     <- "D2" ## select treatment
 ## Priors <- 1 informative; PRIORS <- 2 unifiorm
 PRIORS         <- 1
 ## P poisson, N Negbin
@@ -54,7 +54,7 @@ CROWDING       <- "F"
 ## INF_METH <- J Joint fit;
 ## INF_METH <- R rep by rep fit;
 ## INF_METH <- H hierarchical fit;
-INF_METH       <- "H"
+INF_METH       <- "J"
 #OBS_PROC      <- 1
 
 ############################################################################################################
